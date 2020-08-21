@@ -24,6 +24,8 @@
 - **View** : 웹 요청을 받고, 전달받은 데이터를 처리해서 가공
 - **Model** : 데이터베이스에 저장되는 데이터
 
+<center><img src="../img/lecture1.png"></center>
+
 <br />
 
 ---
