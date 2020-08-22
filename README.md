@@ -2,6 +2,13 @@
 
 🦁 UNILION - dreamary clone coding
 
+<p>
+  더 편하게 보고싶다면 👉 
+  <a href="https://www.notion.so/Dreamary-b5daff7208f34deca184ec8eae11f6f3">
+     <img alt="notion" src="https://img.shields.io/badge/-notion-black?logo=notion" />
+  </a>
+</p>
+
 <br />
 
 ### 📝 강의
