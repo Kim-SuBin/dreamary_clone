@@ -1,17 +1,7 @@
-label {
-    margin-bottom: 0rem;
-    font-size: 25px;
-}
+label {margin-bottom: 0rem; font-size: 25px;}
 
-#logo {
-    display: flex;
-}
+#logo {display: flex;}
 
-#navbar {
-    display: flex;
-    justify-content: space-between;
-}
+#navbar {display: flex; justify-content: space-between;}
 
-footer {
-    padding-top: 1.5rem;
-}
+footer {padding-top: 1.5rem;}
