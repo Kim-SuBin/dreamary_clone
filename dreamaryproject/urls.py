@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 # views.py 파일 연결
 from page import views
@@ -26,7 +26,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     # '' url이 들어오면 views.py의 home 함수 실행를 실행시킬거고, 이 path를 home이라고 부를거야! ^0^
-    path('', views.home, name = "home"),
-    path('introduce/', views.introduce, name = "introduce"),
-    path('profile/<int:designer_id>/', views.detail, name = "detail"),
+    path('', include('page.urls')),
+    # path('', views.home, name = "home"),
+    # path('introduce/', views.introduce, name = "introduce"),
+    # path('profile/<int:designer_id>/', views.detail, name = "detail"),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
