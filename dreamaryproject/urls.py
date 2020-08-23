@@ -28,4 +28,5 @@ urlpatterns = [
     # '' url이 들어오면 views.py의 home 함수 실행를 실행시킬거고, 이 path를 home이라고 부를거야! ^0^
     path('', views.home, name = "home"),
     path('introduce/', views.introduce, name = "introduce"),
+    path('profile/<int:designer_id>/', views.detail, name = "detail"),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
