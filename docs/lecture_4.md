@@ -77,7 +77,7 @@
     admin.site.register(Designer)
     ```
 
-### Django 프로젝트 실습
+### 4.6 Django 프로젝트 실습
 
 1. `models.py` 에 다음과 같은 내용을 추가합니다.
 
