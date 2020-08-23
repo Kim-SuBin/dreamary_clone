@@ -5,3 +5,6 @@ from django.shortcuts import render
 def home(request):
     # request가 들어오는 경우 home.html을 return
     return render(request, 'home.html')
+
+def introduce(request):
+    return render(request, 'introduce.html')
