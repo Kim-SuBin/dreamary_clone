@@ -27,13 +27,30 @@ def create(request):
         post = Designer()
         if 'image' in request.FILES:
             post.image = request.FILES['image']
-            post.name = request.POST['name']
-            post.address = request.POST['address']
-            post.description = request.POST['description']
+        post.name = request.POST['name']
+        post.address = request.POST['address']
+        post.description = request.POST['description']
 
-            post.save()
+        post.save()
 
-            return redirect('detail', post.id)
+        return redirect('detail', post.id)
+
+def update(request, designer_id):
+    post = get_object_or_404(Designer, pk = designer_id)
+    
+    if request.method == 'POST':
+        if 'image' in request.FILES:
+            post.image = request.FILES['image']
+        post.name = request.POST['name']
+        post.address = request.POST['address']
+        post.description = request.POST['description']
+
+        post.save()
+
+        return redirect('detail', post.id)
+    else:
+        return render(request, 'update.html', {'designer' : post})
+
 
 def delete(request, designer_id):
     post = get_object_or_404(Designer, pk = designer_id)
